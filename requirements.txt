@@ -1,0 +1,10 @@
+pyyaml
+python-dotenv
+requests
+pillow
+ffmpeg-python
+librosa
+soundfile
+google-api-python-client
+google-auth-oauthlib
+playwright
