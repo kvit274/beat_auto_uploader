@@ -1,0 +1,18 @@
+name: beatauto
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - ffmpeg
+  - pip
+  - pip:
+      - pyyaml
+      - python-dotenv
+      - requests
+      - pillow
+      - ffmpeg-python
+      - librosa
+      - soundfile
+      - google-api-python-client
+      - google-auth-oauthlib
+      - playwright
