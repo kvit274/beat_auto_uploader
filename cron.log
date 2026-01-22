@@ -1,0 +1,412 @@
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+ffmpeg version 8.0 Copyright (c) 2000-2025 the FFmpeg developers
+  built with clang version 19.1.7
+  configuration: --prefix=/Users/kvit/miniconda3/envs/beatauto --cc=arm64-apple-darwin20.0.0-clang --cxx=arm64-apple-darwin20.0.0-clang++ --nm=arm64-apple-darwin20.0.0-nm --ar=arm64-apple-darwin20.0.0-ar --disable-doc --enable-openssl --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libharfbuzz --enable-libfontconfig --enable-libopenh264 --enable-libdav1d --enable-cross-compile --arch=arm64 --target-os=darwin --cross-prefix=arm64-apple-darwin20.0.0- --host-cc=/Users/runner/miniforge3/conda-bld/ffmpeg_1758924017975/_build_env/bin/x86_64-apple-darwin13.4.0-clang --enable-neon --disable-gnutls --enable-libvpx --enable-libass --enable-pthreads --enable-libopenvino --enable-gpl --enable-libx264 --enable-libx265 --enable-libmp3lame --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --enable-libvorbis --enable-libopus --enable-librsvg --enable-ffplay --enable-vulkan --enable-libshaderc --pkg-config=/Users/runner/miniforge3/conda-bld/ffmpeg_1758924017975/_build_env/bin/pkg-config
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+Input #0, image2, from '/Users/kvit/Documents/beat_auto_uploader/data/images/DON TOLIVER/4e127200699517f0a005986f97fe415b.jpg':
+  Duration: 00:00:00.03, start: 0.000000, bitrate: 8330 kb/s
+  Stream #0:0: Video: mjpeg (Progressive), yuvj420p(pc, bt470bg/unknown/unknown), 412x402 [SAR 72:72 DAR 206:201], 30 fps, 30 tbr, 30 tbn
+[mp3 @ 0x13b804ba0] Estimating duration from bitrate, this may be inaccurate
+Input #1, mp3, from '/Users/kvit/Documents/beat_auto_uploader/data/beats/DON TOLIVER/BELEZAPULA 140 KVIT NAMELESSS 1KRYSKLE.mp3':
+  Metadata:
+    encoded_by      : LAME in FL Studio 2024
+    date            : 2025
+  Duration: 00:01:51.48, start: 0.000000, bitrate: 320 kb/s
+  Stream #1:0: Audio: mp3 (mp3float), 48000 Hz, stereo, fltp, 320 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (mjpeg (native) -> h264 (libx264))
+  Stream #1:0 -> #0:1 (mp3 (mp3float) -> aac (native))
+Press [q] to stop, [?] for help
+[swscaler @ 0x140028000] deprecated pixel format used, make sure you did set range correctly
+[libx264 @ 0x13b805da0] using SAR=3836/3833
+[libx264 @ 0x13b805da0] using cpu capabilities: ARMv8 NEON
+[libx264 @ 0x13b805da0] profile High, level 4.0, 4:2:0, 8-bit
+[libx264 @ 0x13b805da0] 264 - core 164 r3095 baee400 - H.264/MPEG-4 AVC codec - Copyleft 2003-2022 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:-3:-3 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=2.00:0.70 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-4 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=18.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.20
+Output #0, mp4, to '/Users/kvit/Documents/beat_auto_uploader/data/vids/BELEZAPULA 140 KVIT NAMELESSS 1KRYSKLE.mp4':
+  Metadata:
+    encoder         : Lavf62.3.100
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuvj420p(pc, bt470bg/unknown/unknown, progressive), 1920x1080 [SAR 37080:37051 DAR 65920:37051], q=2-31, 30 fps, 15360 tbn
+    Metadata:
+      encoder         : Lavc62.11.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 320 kb/s
+    Metadata:
+      encoder         : Lavc62.11.100 aac
+frame=    8 fps=0.0 q=24.0 size=     256KiB time=00:00:00.20 bitrate=10487.7kbits/s speed=0.341x elapsed=0:00:00.58    frame=   30 fps= 26 q=24.0 size=     256KiB time=00:00:00.93 bitrate=2247.4kbits/s speed=0.795x elapsed=0:00:01.17    frame=   48 fps= 27 q=24.0 size=     256KiB time=00:00:01.53 bitrate=1368.0kbits/s speed=0.876x elapsed=0:00:01.75    frame=   70 fps= 31 q=24.0 size=     256KiB time=00:00:02.26 bitrate= 925.4kbits/s speed=0.996x elapsed=0:00:02.27    frame=   93 fps= 33 q=24.0 size=     256KiB time=00:00:03.03 bitrate= 691.5kbits/s speed=1.08x elapsed=0:00:02.80    frame=  118 fps= 35 q=24.0 size=     512KiB time=00:00:03.86 bitrate=1084.8kbits/s speed=1.14x elapsed=0:00:03.37    frame=  143 fps= 36 q=24.0 size=     512KiB time=00:00:04.73 bitrate= 886.2kbits/s speed= 1.2x elapsed=0:00:03.95    frame=  167 fps= 37 q=24.0 size=     512KiB time=00:00:05.50 bitrate= 762.7kbits/s speed=1.21x elapsed=0:00:04.53    frame=  194 fps= 38 q=24.0 size=     512KiB time=00:00:06.40 bitrate= 655.4kbits/s speed=1.25x elapsed=0:00:05.10    frame=  210 fps= 37 q=24.0 size=     768KiB time=00:00:06.96 bitrate= 903.1kbits/s speed=1.22x elapsed=0:00:05.71    frame=  233 fps= 37 q=24.0 size=     768KiB time=00:00:07.70 bitrate= 817.1kbits/s speed=1.22x elapsed=0:00:06.29    frame=  250 fps= 37 q=24.0 size=     768KiB time=00:00:08.26 bitrate= 761.1kbits/s speed=1.21x elapsed=0:00:06.82    frame=  258 fps= 35 q=24.0 size=    1024KiB time=00:00:08.53 bitrate= 983.1kbits/s speed=1.15x elapsed=0:00:07.39    frame=  264 fps= 33 q=24.0 size=    1024KiB time=00:00:08.73 bitrate= 960.6kbits/s speed=1.09x elapsed=0:00:07.98    frame=  283 fps= 33 q=24.0 size=    1024KiB time=00:00:09.36 bitrate= 895.6kbits/s speed=1.09x elapsed=0:00:08.56    frame=  304 fps= 33 q=24.0 size=    1280KiB time=00:00:10.06 bitrate=1041.7kbits/s speed= 1.1x elapsed=0:00:09.12    frame=  323 fps= 33 q=24.0 size=    1280KiB time=00:00:10.70 bitrate= 980.0kbits/s speed= 1.1x elapsed=0:00:09.69    frame=  344 fps= 34 q=24.0 size=    1280KiB time=00:00:11.40 bitrate= 919.8kbits/s speed=1.11x elapsed=0:00:10.26    frame=  367 fps= 34 q=24.0 size=    1280KiB time=00:00:12.16 bitrate= 861.9kbits/s speed=1.13x elapsed=0:00:10.77    frame=  388 fps= 34 q=24.0 size=    1280KiB time=00:00:12.86 bitrate= 815.0kbits/s speed=1.13x elapsed=0:00:11.34    frame=  404 fps= 34 q=24.0 size=    1280KiB time=00:00:13.40 bitrate= 782.5kbits/s speed=1.12x elapsed=0:00:11.91    frame=  426 fps= 34 q=24.0 size=    1536KiB time=00:00:14.13 bitrate= 890.3kbits/s speed=1.13x elapsed=0:00:12.45    frame=  452 fps= 35 q=24.0 size=    1536KiB time=00:00:15.00 bitrate= 838.9kbits/s speed=1.15x elapsed=0:00:13.03    frame=  472 fps= 35 q=24.0 size=    1536KiB time=00:00:15.66 bitrate= 803.2kbits/s speed=1.15x elapsed=0:00:13.60    frame=  491 fps= 35 q=24.0 size=    1536KiB time=00:00:16.30 bitrate= 772.0kbits/s speed=1.15x elapsed=0:00:14.15    frame=  513 fps= 35 q=24.0 size=    2048KiB time=00:00:17.03 bitrate= 985.0kbits/s speed=1.16x elapsed=0:00:14.73    frame=  538 fps= 35 q=24.0 size=    2048KiB time=00:00:17.86 bitrate= 939.0kbits/s speed=1.17x elapsed=0:00:15.30    frame=  566 fps= 36 q=24.0 size=    2048KiB time=00:00:18.80 bitrate= 892.4kbits/s speed=1.18x elapsed=0:00:15.88    frame=  590 fps= 36 q=24.0 size=    2048KiB time=00:00:19.60 bitrate= 856.0kbits/s speed=1.19x elapsed=0:00:16.43    frame=  616 fps= 36 q=24.0 size=    2048KiB time=00:00:20.46 bitrate= 819.8kbits/s speed= 1.2x elapsed=0:00:17.00    frame=  637 fps= 36 q=24.0 size=    2304KiB time=00:00:21.16 bitrate= 891.7kbits/s speed= 1.2x elapsed=0:00:17.58    frame=  663 fps= 36 q=24.0 size=    2304KiB time=00:00:22.03 bitrate= 856.6kbits/s speed=1.21x elapsed=0:00:18.16    frame=  687 fps= 37 q=24.0 size=    2304KiB time=00:00:22.86 bitrate= 825.4kbits/s speed=1.22x elapsed=0:00:18.74    frame=  716 fps= 37 q=24.0 size=    2304KiB time=00:00:23.80 bitrate= 793.1kbits/s speed=1.23x elapsed=0:00:19.32    frame=  745 fps= 37 q=24.0 size=    2304KiB time=00:00:24.76 bitrate= 762.1kbits/s speed=1.24x elapsed=0:00:19.89    frame=  764 fps= 37 q=24.0 size=    2816KiB time=00:00:25.40 bitrate= 908.2kbits/s speed=1.24x elapsed=0:00:20.43    frame=  788 fps= 38 q=24.0 size=    2816KiB time=00:00:26.20 bitrate= 880.5kbits/s speed=1.25x elapsed=0:00:21.01    frame=  812 fps= 38 q=24.0 size=    2816KiB time=00:00:27.00 bitrate= 854.4kbits/s speed=1.25x elapsed=0:00:21.58    frame=  837 fps= 38 q=24.0 size=    2816KiB time=00:00:27.83 bitrate= 828.8kbits/s speed=1.26x elapsed=0:00:22.15    frame=  862 fps= 38 q=24.0 size=    3072KiB time=00:00:28.66 bitrate= 877.9kbits/s speed=1.26x elapsed=0:00:22.73    frame=  888 fps= 38 q=24.0 size=    3072KiB time=00:00:29.53 bitrate= 852.1kbits/s speed=1.27x elapsed=0:00:23.27    frame=  916 fps= 38 q=24.0 size=    3072KiB time=00:00:30.50 bitrate= 825.1kbits/s speed=1.28x elapsed=0:00:23.85    frame=  948 fps= 39 q=24.0 size=    3072KiB time=00:00:31.53 bitrate= 798.1kbits/s speed=1.29x elapsed=0:00:24.43    frame=  972 fps= 39 q=24.0 size=    3072KiB time=00:00:32.33 bitrate= 778.3kbits/s speed=1.29x elapsed=0:00:25.00    frame= 1000 fps= 39 q=24.0 size=    3328KiB time=00:00:33.26 bitrate= 819.5kbits/s speed= 1.3x elapsed=0:00:25.58    frame= 1016 fps= 39 q=24.0 size=    3584KiB time=00:00:33.80 bitrate= 868.7kbits/s speed= 1.3x elapsed=0:00:26.09    frame= 1042 fps= 39 q=24.0 size=    3584KiB time=00:00:34.66 bitrate= 846.9kbits/s speed= 1.3x elapsed=0:00:26.67    frame= 1070 fps= 39 q=24.0 size=    3584KiB time=00:00:35.60 bitrate= 824.7kbits/s speed=1.31x elapsed=0:00:27.24    frame= 1098 fps= 39 q=24.0 size=    3840KiB time=00:00:36.53 bitrate= 861.1kbits/s speed=1.31x elapsed=0:00:27.82    frame= 1126 fps= 40 q=24.0 size=    3840KiB time=00:00:37.46 bitrate= 839.6kbits/s speed=1.32x elapsed=0:00:28.39    frame= 1154 fps= 40 q=24.0 size=    3840KiB time=00:00:38.40 bitrate= 819.2kbits/s speed=1.33x elapsed=0:00:28.97    frame= 1182 fps= 40 q=24.0 size=    3840KiB time=00:00:39.33 bitrate= 799.8kbits/s speed=1.33x elapsed=0:00:29.54    frame= 1204 fps= 40 q=24.0 size=    3840KiB time=00:00:40.13 bitrate= 783.8kbits/s speed=1.33x elapsed=0:00:30.10    frame= 1234 fps= 40 q=24.0 size=    4096KiB time=00:00:40.98 bitrate= 818.8kbits/s speed=1.34x elapsed=0:00:30.65    frame= 1254 fps= 40 q=24.0 size=    4352KiB time=00:00:41.73 bitrate= 854.3kbits/s speed=1.34x elapsed=0:00:31.22    frame= 1283 fps= 40 q=24.0 size=    4352KiB time=00:00:42.73 bitrate= 834.3kbits/s speed=1.34x elapsed=0:00:31.80    frame= 1308 fps= 40 q=24.0 size=    4352KiB time=00:00:43.53 bitrate= 819.0kbits/s speed=1.34x elapsed=0:00:32.41    frame= 1323 fps= 40 q=24.0 size=    4608KiB time=00:00:44.06 bitrate= 856.6kbits/s speed=1.34x elapsed=0:00:33.00    frame= 1352 fps= 40 q=24.0 size=    4608KiB time=00:00:45.00 bitrate= 838.9kbits/s speed=1.34x elapsed=0:00:33.58    frame= 1380 fps= 40 q=24.0 size=    4608KiB time=00:00:45.93 bitrate= 821.8kbits/s speed=1.34x elapsed=0:00:34.15    frame= 1403 fps= 40 q=24.0 size=    4608KiB time=00:00:46.70 bitrate= 808.3kbits/s speed=1.35x elapsed=0:00:34.66    frame= 1424 fps= 40 q=24.0 size=    4608KiB time=00:00:47.40 bitrate= 796.4kbits/s speed=1.35x elapsed=0:00:35.23    frame= 1444 fps= 40 q=24.0 size=    4864KiB time=00:00:48.06 bitrate= 829.0kbits/s speed=1.34x elapsed=0:00:35.84    frame= 1476 fps= 41 q=24.0 size=    4864KiB time=00:00:49.13 bitrate= 811.0kbits/s speed=1.35x elapsed=0:00:36.41    frame= 1495 fps= 40 q=24.0 size=    4864KiB time=00:00:49.80 bitrate= 800.1kbits/s speed=1.35x elapsed=0:00:36.98    frame= 1514 fps= 40 q=24.0 size=    5120KiB time=00:00:50.40 bitrate= 832.2kbits/s speed=1.34x elapsed=0:00:37.55    frame= 1542 fps= 40 q=24.0 size=    5376KiB time=00:00:51.33 bitrate= 857.9kbits/s speed=1.35x elapsed=0:00:38.12    frame= 1566 fps= 40 q=24.0 size=    5376KiB time=00:00:52.13 bitrate= 844.8kbits/s speed=1.35x elapsed=0:00:38.72    frame= 1591 fps= 40 q=24.0 size=    5376KiB time=00:00:53.00 bitrate= 831.0kbits/s speed=1.35x elapsed=0:00:39.29    frame= 1622 fps= 41 q=24.0 size=    5376KiB time=00:00:54.00 bitrate= 815.6kbits/s speed=1.35x elapsed=0:00:39.87    frame= 1649 fps= 41 q=24.0 size=    5376KiB time=00:00:54.90 bitrate= 802.2kbits/s speed=1.36x elapsed=0:00:40.44    frame= 1670 fps= 41 q=24.0 size=    5632KiB time=00:00:55.60 bitrate= 829.8kbits/s speed=1.35x elapsed=0:00:41.04    frame= 1694 fps= 41 q=24.0 size=    5632KiB time=00:00:56.40 bitrate= 818.0kbits/s speed=1.36x elapsed=0:00:41.60    frame= 1722 fps= 41 q=24.0 size=    5632KiB time=00:00:57.33 bitrate= 804.7kbits/s speed=1.36x elapsed=0:00:42.19    frame= 1742 fps= 41 q=24.0 size=    5632KiB time=00:00:58.00 bitrate= 795.5kbits/s speed=1.36x elapsed=0:00:42.77    frame= 1762 fps= 41 q=24.0 size=    6144KiB time=00:00:58.66 bitrate= 857.9kbits/s speed=1.35x elapsed=0:00:43.35    frame= 1787 fps= 41 q=24.0 size=    6144KiB time=00:00:59.50 bitrate= 845.9kbits/s speed=1.35x elapsed=0:00:43.92    frame= 1812 fps= 41 q=24.0 size=    6144KiB time=00:01:00.33 bitrate= 834.2kbits/s speed=1.36x elapsed=0:00:44.47    frame= 1836 fps= 41 q=24.0 size=    6144KiB time=00:01:01.13 bitrate= 823.3kbits/s speed=1.36x elapsed=0:00:44.98    frame= 1856 fps= 41 q=24.0 size=    6144KiB time=00:01:01.86 bitrate= 813.6kbits/s speed=1.36x elapsed=0:00:45.53    frame= 1887 fps= 41 q=24.0 size=    6400KiB time=00:01:02.86 bitrate= 834.0kbits/s speed=1.36x elapsed=0:00:46.13    frame= 1913 fps= 41 q=24.0 size=    6400KiB time=00:01:03.70 bitrate= 823.1kbits/s speed=1.36x elapsed=0:00:46.71    frame= 1940 fps= 41 q=24.0 size=    6400KiB time=00:01:04.60 bitrate= 811.6kbits/s speed=1.37x elapsed=0:00:47.28    frame= 1965 fps= 41 q=24.0 size=    6400KiB time=00:01:05.43 bitrate= 801.3kbits/s speed=1.37x elapsed=0:00:47.85    frame= 1992 fps= 41 q=24.0 size=    6400KiB time=00:01:06.33 bitrate= 790.4kbits/s speed=1.37x elapsed=0:00:48.43    frame= 2014 fps= 41 q=24.0 size=    6912KiB time=00:01:07.10 bitrate= 843.9kbits/s speed=1.37x elapsed=0:00:49.00    frame= 2038 fps= 41 q=24.0 size=    6912KiB time=00:01:07.86 bitrate= 834.3kbits/s speed=1.37x elapsed=0:00:49.58    frame= 2067 fps= 41 q=24.0 size=    6912KiB time=00:01:08.90 bitrate= 821.8kbits/s speed=1.37x elapsed=0:00:50.18    frame= 2097 fps= 41 q=24.0 size=    6912KiB time=00:01:09.86 bitrate= 810.5kbits/s speed=1.38x elapsed=0:00:50.77    frame= 2126 fps= 41 q=24.0 size=    7168KiB time=00:01:10.80 bitrate= 829.4kbits/s speed=1.38x elapsed=0:00:51.35    frame= 2155 fps= 42 q=24.0 size=    7168KiB time=00:01:11.83 bitrate= 817.5kbits/s speed=1.38x elapsed=0:00:51.92    frame= 2187 fps= 42 q=24.0 size=    7168KiB time=00:01:12.83 bitrate= 806.2kbits/s speed=1.39x elapsed=0:00:52.50    frame= 2206 fps= 42 q=24.0 size=    7168KiB time=00:01:13.46 bitrate= 799.3kbits/s speed=1.38x elapsed=0:00:53.06    frame= 2233 fps= 42 q=24.0 size=    7424KiB time=00:01:14.36 bitrate= 817.8kbits/s speed=1.39x elapsed=0:00:53.65    frame= 2256 fps= 42 q=24.0 size=    7680KiB time=00:01:15.13 bitrate= 837.4kbits/s speed=1.39x elapsed=0:00:54.23    frame= 2280 fps= 42 q=24.0 size=    7680KiB time=00:01:15.93 bitrate= 828.6kbits/s speed=1.39x elapsed=0:00:54.80    frame= 2303 fps= 42 q=24.0 size=    7680KiB time=00:01:16.70 bitrate= 820.3kbits/s speed=1.38x elapsed=0:00:55.38    frame= 2324 fps= 42 q=24.0 size=    7680KiB time=00:01:17.40 bitrate= 812.9kbits/s speed=1.38x elapsed=0:00:55.95    frame= 2352 fps= 42 q=24.0 size=    7936KiB time=00:01:18.33 bitrate= 829.9kbits/s speed=1.39x elapsed=0:00:56.52    frame= 2383 fps= 42 q=24.0 size=    7936KiB time=00:01:19.36 bitrate= 819.1kbits/s speed=1.39x elapsed=0:00:57.10    frame= 2410 fps= 42 q=24.0 size=    7936KiB time=00:01:20.26 bitrate= 810.0kbits/s speed=1.39x elapsed=0:00:57.68    frame= 2436 fps= 42 q=24.0 size=    7936KiB time=00:01:21.13 bitrate= 801.3kbits/s speed=1.39x elapsed=0:00:58.25    frame= 2464 fps= 42 q=24.0 size=    7936KiB time=00:01:22.06 bitrate= 792.2kbits/s speed=1.39x elapsed=0:00:58.83    frame= 2484 fps= 42 q=24.0 size=    8192KiB time=00:01:22.73 bitrate= 811.2kbits/s speed=1.39x elapsed=0:00:59.36    frame= 2506 fps= 42 q=24.0 size=    8448KiB time=00:01:23.46 bitrate= 829.2kbits/s speed=1.39x elapsed=0:00:59.95    frame= 2522 fps= 42 q=24.0 size=    8448KiB time=00:01:24.00 bitrate= 823.9kbits/s speed=1.39x elapsed=0:01:00.55    frame= 2546 fps= 42 q=24.0 size=    8448KiB time=00:01:24.86 bitrate= 815.5kbits/s speed=1.39x elapsed=0:01:01.15    frame= 2578 fps= 42 q=24.0 size=    8704KiB time=00:01:25.86 bitrate= 830.4kbits/s speed=1.39x elapsed=0:01:01.74    frame= 2602 fps= 42 q=24.0 size=    8704KiB time=00:01:26.70 bitrate= 822.4kbits/s speed=1.39x elapsed=0:01:02.26    frame= 2631 fps= 42 q=24.0 size=    8704KiB time=00:01:27.63 bitrate= 813.7kbits/s speed=1.39x elapsed=0:01:02.83    frame= 2658 fps= 42 q=24.0 size=    8704KiB time=00:01:28.53 bitrate= 805.4kbits/s speed= 1.4x elapsed=0:01:03.40    frame= 2682 fps= 42 q=24.0 size=    8704KiB time=00:01:29.33 bitrate= 798.2kbits/s speed= 1.4x elapsed=0:01:03.98    frame= 2710 fps= 42 q=24.0 size=    8960KiB time=00:01:30.26 bitrate= 813.2kbits/s speed= 1.4x elapsed=0:01:04.50    frame= 2734 fps= 42 q=24.0 size=    8960KiB time=00:01:31.06 bitrate= 806.0kbits/s speed= 1.4x elapsed=0:01:05.07    frame= 2760 fps= 42 q=24.0 size=    9216KiB time=00:01:31.93 bitrate= 821.2kbits/s speed= 1.4x elapsed=0:01:05.64    frame= 2780 fps= 42 q=24.0 size=    9472KiB time=00:01:32.60 bitrate= 838.0kbits/s speed= 1.4x elapsed=0:01:06.21    frame= 2804 fps= 42 q=24.0 size=    9472KiB time=00:01:33.40 bitrate= 830.8kbits/s speed= 1.4x elapsed=0:01:06.78    frame= 2829 fps= 42 q=24.0 size=    9472KiB time=00:01:34.23 bitrate= 823.4kbits/s speed= 1.4x elapsed=0:01:07.36    frame= 2853 fps= 42 q=24.0 size=    9472KiB time=00:01:35.06 bitrate= 816.2kbits/s speed= 1.4x elapsed=0:01:07.93    frame= 2878 fps= 42 q=24.0 size=    9472KiB time=00:01:35.86 bitrate= 809.4kbits/s speed= 1.4x elapsed=0:01:08.51    frame= 2908 fps= 42 q=24.0 size=    9728KiB time=00:01:36.86 bitrate= 822.7kbits/s speed= 1.4x elapsed=0:01:09.08    frame= 2980 fps= 43 q=24.0 size=    9728KiB time=00:01:39.26 bitrate= 802.8kbits/s speed=1.43x elapsed=0:01:09.65    frame= 3005 fps= 43 q=24.0 size=    9984KiB time=00:01:40.10 bitrate= 817.1kbits/s speed=1.43x elapsed=0:01:10.22    frame= 3014 fps= 43 q=24.0 size=   10240KiB time=00:01:40.40 bitrate= 835.5kbits/s speed=1.42x elapsed=0:01:10.80    frame= 3026 fps= 42 q=24.0 size=   10240KiB time=00:01:40.80 bitrate= 832.2kbits/s speed=1.41x elapsed=0:01:11.37    frame= 3038 fps= 42 q=24.0 size=   10240KiB time=00:01:41.20 bitrate= 828.9kbits/s speed=1.41x elapsed=0:01:11.96    frame= 3055 fps= 42 q=24.0 size=   10240KiB time=00:01:41.76 bitrate= 824.3kbits/s speed= 1.4x elapsed=0:01:12.53    frame= 3067 fps= 42 q=24.0 size=   10240KiB time=00:01:42.16 bitrate= 821.1kbits/s speed= 1.4x elapsed=0:01:13.10    frame= 3078 fps= 42 q=24.0 size=   10240KiB time=00:01:42.53 bitrate= 818.1kbits/s speed=1.39x elapsed=0:01:13.70    frame= 3094 fps= 42 q=24.0 size=   10240KiB time=00:01:43.06 bitrate= 813.9kbits/s speed=1.39x elapsed=0:01:14.27    frame= 3118 fps= 42 q=24.0 size=   10240KiB time=00:01:43.86 bitrate= 807.6kbits/s speed=1.39x elapsed=0:01:14.84    frame= 3150 fps= 42 q=24.0 size=   10496KiB time=00:01:44.93 bitrate= 819.4kbits/s speed=1.39x elapsed=0:01:15.42    frame= 3170 fps= 42 q=24.0 size=   10496KiB time=00:01:45.60 bitrate= 814.2kbits/s speed=1.39x elapsed=0:01:16.01    frame= 3195 fps= 42 q=24.0 size=   10496KiB time=00:01:46.43 bitrate= 807.9kbits/s speed=1.39x elapsed=0:01:16.58    frame= 3222 fps= 42 q=24.0 size=   10496KiB time=00:01:47.33 bitrate= 801.1kbits/s speed=1.39x elapsed=0:01:17.15    frame= 3250 fps= 42 q=24.0 size=   10496KiB time=00:01:48.26 bitrate= 794.2kbits/s speed=1.39x elapsed=0:01:17.72    frame= 3268 fps= 42 q=24.0 size=   11008KiB time=00:01:48.86 bitrate= 828.3kbits/s speed=1.39x elapsed=0:01:18.27    frame= 3292 fps= 42 q=24.0 size=   11008KiB time=00:01:49.66 bitrate= 822.3kbits/s speed=1.39x elapsed=0:01:18.78    frame= 3320 fps= 42 q=24.0 size=   11008KiB time=00:01:50.60 bitrate= 815.4kbits/s speed=1.39x elapsed=0:01:19.35    frame= 3345 fps= 42 q=24.0 size=   11008KiB time=N/A bitrate=N/A speed=N/A elapsed=0:01:19.92    frame= 3382 fps= 42 q=24.0 size=   11008KiB time=N/A bitrate=N/A speed=N/A elapsed=0:01:20.50    [out#0/mp4 @ 0x600001594000] video:6872KiB audio:4395KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 1.082787%
+frame= 3394 fps= 42 q=-1.0 Lsize=   11389KiB time=00:01:51.48 bitrate= 836.9kbits/s speed=1.38x elapsed=0:01:20.56    
+[libx264 @ 0x13b805da0] frame I:14    Avg QP: 5.96  size:256241
+[libx264 @ 0x13b805da0] frame P:855   Avg QP:12.02  size:  3061
+[libx264 @ 0x13b805da0] frame B:2525  Avg QP: 5.84  size:   329
+[libx264 @ 0x13b805da0] consecutive B-frames:  0.8%  0.0%  0.1% 99.1%
+[libx264 @ 0x13b805da0] mb I  I16..4: 42.0% 35.5% 22.5%
+[libx264 @ 0x13b805da0] mb P  I16..4:  0.0%  0.0%  0.0%  P16..4:  4.4%  0.1%  0.3%  0.0%  0.0%    skip:95.3%
+[libx264 @ 0x13b805da0] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  4.4%  0.0%  0.0%  direct: 0.0%  skip:95.6%  L0:68.1% L1:31.8% BI: 0.1%
+[libx264 @ 0x13b805da0] 8x8 transform intra:35.5% inter:89.5%
+[libx264 @ 0x13b805da0] coded y,uvDC,uvAC intra: 57.8% 51.6% 50.0% inter: 0.7% 0.1% 0.0%
+[libx264 @ 0x13b805da0] i16 v,h,dc,p: 98%  0%  2%  0%
+[libx264 @ 0x13b805da0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 13% 15%  9%  8% 13% 10% 11% 10% 12%
+[libx264 @ 0x13b805da0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 17% 16%  7%  7% 13% 10% 11%  8% 11%
+[libx264 @ 0x13b805da0] i8c dc,h,v,p: 59% 13% 19%  9%
+[libx264 @ 0x13b805da0] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x13b805da0] ref P L0: 49.1%  0.0% 50.2%  0.7%
+[libx264 @ 0x13b805da0] ref B L0: 50.8% 49.2%  0.1%
+[libx264 @ 0x13b805da0] ref B L1: 99.5%  0.5%
+[libx264 @ 0x13b805da0] kb/s:497.57
+[aac @ 0x139707100] Qavg: 8290.916
+✅ Google token valid and refreshed, ready to upload.
+✅ 128 unique tags fetched (top 50 returned).
+YT tags length (excluding commas): 499
+{
+  "title": "[FREE] DON TOLIVER TYPE BEAT - 'HIGHWAY'",
+  "bs_tags": [
+    "Don Toliver",
+    "Travis Scott",
+    "Melodic Trap"
+  ],
+  "yt_tags": [
+    "don toliver type beat",
+    "travis scott type beat",
+    "don toliver type beat free",
+    "free don toliver type beat",
+    "don toliver x travis scott type beat",
+    "travis scott type beat 2024",
+    "don toliver type beat 2025",
+    "don toliver type beat 2024",
+    "travis scott don toliver type beat",
+    "free travis scott type beat 2025",
+    "don toliver instrumental",
+    "free don toliver type beat 2025",
+    "don toliver travis scott type beat",
+    "don toliver x travis scott type beat 2025",
+    "jackboys 2 type beat",
+    "don toliver melodic",
+    "melodic type beat",
+    "don toliver type beat free for profit"
+  ],
+  "description": "Beat inspired by Don Toliver & Travis Scott, Hope y'all like it!USAGE TERMSYou may use this beat only for writing lyrics and creating demo. If you want to use this beat commercially you can buy a lease at my beat store.Download/Purchase: [beatstars_link]Key: C# MinorBpm: 136Instagram: https://www.instagram.com/kvit_274_Email: kvit.beats2@gmail.com",
+  "tags": [
+    "don toliver type beat",
+    "travis scott type beat",
+    "don toliver type beat free",
+    "type beat",
+    "free don toliver type beat",
+    "type beat don toliver",
+    "don toliver type beats",
+    "free travis scott type beat",
+    "free don toliver x travis scott type beat",
+    "travis scott x don toliver type beat",
+    "don toliver x travis scott type beat",
+    "travis scott type beat 2024",
+    "free frvrfriday type beat",
+    "don toliver x frvrfriday type beat",
+    "frvrfriday type beat free",
+    "frvrfriday type beat",
+    "don toliver type beat 2025",
+    "free don toliver",
+    "don toliver type beat 2024",
+    "frvrfriday type beat dark",
+    "don toliver hardstone type beat",
+    "don toliver",
+    "type beat 2025",
+    "travis scott don toliver type beat",
+    "free travis scott type beat 2025",
+    "travis scott type beat free",
+    "free travis scott x don toliver type beat",
+    "travis scott x don toliver type beat 2025",
+    "travis scott type beat hard",
+    "travis scott type beat 2025",
+    "don toliver instrumental",
+    "free don toliver type beat 2025",
+    "free type beat",
+    "don toliver travis scott type beat",
+    "free travis scott don toliver type beat",
+    "don toliver x travis scott type beat 2025",
+    "type beat jackboys 2",
+    "free don toliver x jackboys 2 type beat",
+    "jackboys 2 type beat",
+    "don toliver type beat jackboys",
+    "don toliver melodic",
+    "type beat melodic",
+    "don toliver x jackboys 2 type beat",
+    "travis scott x jackboys 2 type beat",
+    "melodic type beat",
+    "travis scott type beat dark",
+    "don toliver type beat free for profit",
+    "don toliver type beat melodic",
+    "don toliver type beat hard",
+    "future type beat"
+  ],
+  "short_hashtags": "#DonToliver #TravisScott #TypeBeat"
+}
+
+🚀 Attempt 1/3 to upload on BeatStars...
+
+[INFO] Uploading audio...
+[INFO] Audio selected. Waiting for upload to start...
+[WARN] Upload progress not detected — continuing cautiously.
+[INFO] Uploading artwork...
+[INFO] File attached, waiting for cropping modal...
+[INFO] Cropping modal: real 'Save' clicked.
+[INFO] Cropping modal closed, returning to Uppy dashboard.
+[INFO] 'Upload 1 file' clicked.
+[INFO] Waiting for BeatStars bottom-right uploader panel...
+[INFO] Upload panel appeared — waiting for it to finish.
+[INFO] Upload panel disappeared — upload fully processed.
+[INFO] Uppy modal closed.
+✅ Artwork uploaded and saved successfully.
+[INFO] Title filled.
+[INFO] Added tag 1: Don Toliver
+[INFO] Added tag 2: Travis Scott
+[INFO] Added tag 3: Melodic Trap
+[INFO] Autofill metadata clicked.
+[WARN] Stem file not found at /Users/kvit/Documents/beat_auto_uploader/data/stems/DON TOLIVER/BELEZAPULA 140 KVIT NAMELESSS 1KRYSKLE.zip. Skipping.
+✅ Publish button clicked.
+[INFO] Waiting for BeatStars shortlink modal...
+[INFO] Opened 'View all links' modal.
+[INFO] Clicked 'Copy link' for short URL.
+✅ BeatStars shortlink copied: https://bsta.rs/gfPETL
+✅ Upload successful on attempt 1: https://bsta.rs/gfPETL
+✅ Final BeatStars link: https://bsta.rs/gfPETL
+
+✅ Upload complete!
+Video ID: 49WHpHZ2QW4
+Watch here: https://youtu.be/49WHpHZ2QW4
+BELEZAPULA 140 KVIT NAMELESSS 1KRYSKLE.mp3 successfully deleted
+4e127200699517f0a005986f97fe415b.jpg successfully deleted
+BELEZAPULA 140 KVIT NAMELESSS 1KRYSKLE.mp4 successfully deleted
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+Traceback (most recent call last):
+  File "/Users/kvit/Documents/beat_auto_uploader/src/orchestrator.py", line 103, in <module>
+    main()
+TypeError: main() missing 3 required positional arguments: 'chosen_beat_path', 'chosen_image_path', and 'artist_name'
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+Traceback (most recent call last):
+  File "/Users/kvit/Documents/beat_auto_uploader/src/orchestrator.py", line 103, in <module>
+    main()
+TypeError: main() missing 3 required positional arguments: 'chosen_beat_path', 'chosen_image_path', and 'artist_name'
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+Traceback (most recent call last):
+  File "/Users/kvit/Documents/beat_auto_uploader/src/orchestrator.py", line 103, in <module>
+    main()
+TypeError: main() missing 3 required positional arguments: 'chosen_beat_path', 'chosen_image_path', and 'artist_name'
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+Traceback (most recent call last):
+  File "/Users/kvit/Documents/beat_auto_uploader/src/orchestrator.py", line 103, in <module>
+    main()
+TypeError: main() missing 3 required positional arguments: 'chosen_beat_path', 'chosen_image_path', and 'artist_name'
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+Traceback (most recent call last):
+  File "/Users/kvit/Documents/beat_auto_uploader/src/orchestrator.py", line 103, in <module>
+    main()
+TypeError: main() missing 3 required positional arguments: 'chosen_beat_path', 'chosen_image_path', and 'artist_name'
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+Traceback (most recent call last):
+  File "/Users/kvit/Documents/beat_auto_uploader/src/orchestrator.py", line 103, in <module>
+    main()
+TypeError: main() missing 3 required positional arguments: 'chosen_beat_path', 'chosen_image_path', and 'artist_name'
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+Traceback (most recent call last):
+  File "/Users/kvit/Documents/beat_auto_uploader/src/orchestrator.py", line 103, in <module>
+    main()
+TypeError: main() missing 3 required positional arguments: 'chosen_beat_path', 'chosen_image_path', and 'artist_name'
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+Traceback (most recent call last):
+  File "/Users/kvit/Documents/beat_auto_uploader/src/orchestrator.py", line 103, in <module>
+    main()
+TypeError: main() missing 3 required positional arguments: 'chosen_beat_path', 'chosen_image_path', and 'artist_name'
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+Traceback (most recent call last):
+  File "/Users/kvit/Documents/beat_auto_uploader/src/orchestrator.py", line 103, in <module>
+    main()
+TypeError: main() missing 3 required positional arguments: 'chosen_beat_path', 'chosen_image_path', and 'artist_name'
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+Traceback (most recent call last):
+  File "/Users/kvit/Documents/beat_auto_uploader/src/orchestrator.py", line 103, in <module>
+    main()
+TypeError: main() missing 3 required positional arguments: 'chosen_beat_path', 'chosen_image_path', and 'artist_name'
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+Traceback (most recent call last):
+  File "/Users/kvit/Documents/beat_auto_uploader/src/orchestrator.py", line 103, in <module>
+    main()
+TypeError: main() missing 3 required positional arguments: 'chosen_beat_path', 'chosen_image_path', and 'artist_name'
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+Traceback (most recent call last):
+  File "/Users/kvit/Documents/beat_auto_uploader/src/orchestrator.py", line 103, in <module>
+    main()
+TypeError: main() missing 3 required positional arguments: 'chosen_beat_path', 'chosen_image_path', and 'artist_name'
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+Traceback (most recent call last):
+  File "/Users/kvit/Documents/beat_auto_uploader/src/orchestrator.py", line 103, in <module>
+    main()
+TypeError: main() missing 3 required positional arguments: 'chosen_beat_path', 'chosen_image_path', and 'artist_name'
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+Traceback (most recent call last):
+  File "/Users/kvit/Documents/beat_auto_uploader/src/orchestrator.py", line 103, in <module>
+    main()
+TypeError: main() missing 3 required positional arguments: 'chosen_beat_path', 'chosen_image_path', and 'artist_name'
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+Traceback (most recent call last):
+  File "/Users/kvit/Documents/beat_auto_uploader/src/orchestrator.py", line 103, in <module>
+    main()
+TypeError: main() missing 3 required positional arguments: 'chosen_beat_path', 'chosen_image_path', and 'artist_name'
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+Traceback (most recent call last):
+  File "/Users/kvit/Documents/beat_auto_uploader/src/orchestrator.py", line 103, in <module>
+    main()
+TypeError: main() missing 3 required positional arguments: 'chosen_beat_path', 'chosen_image_path', and 'artist_name'
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+Traceback (most recent call last):
+  File "/Users/kvit/Documents/beat_auto_uploader/src/orchestrator.py", line 103, in <module>
+    main()
+TypeError: main() missing 3 required positional arguments: 'chosen_beat_path', 'chosen_image_path', and 'artist_name'
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+Traceback (most recent call last):
+  File "/Users/kvit/Documents/beat_auto_uploader/src/orchestrator.py", line 103, in <module>
+    main()
+TypeError: main() missing 3 required positional arguments: 'chosen_beat_path', 'chosen_image_path', and 'artist_name'
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+Traceback (most recent call last):
+  File "/Users/kvit/Documents/beat_auto_uploader/src/orchestrator.py", line 103, in <module>
+    main()
+TypeError: main() missing 3 required positional arguments: 'chosen_beat_path', 'chosen_image_path', and 'artist_name'
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+Traceback (most recent call last):
+  File "/Users/kvit/Documents/beat_auto_uploader/src/orchestrator.py", line 103, in <module>
+    main()
+TypeError: main() missing 3 required positional arguments: 'chosen_beat_path', 'chosen_image_path', and 'artist_name'
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+Traceback (most recent call last):
+  File "/Users/kvit/Documents/beat_auto_uploader/src/orchestrator.py", line 103, in <module>
+    main()
+TypeError: main() missing 3 required positional arguments: 'chosen_beat_path', 'chosen_image_path', and 'artist_name'
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+Traceback (most recent call last):
+  File "/Users/kvit/Documents/beat_auto_uploader/src/orchestrator.py", line 103, in <module>
+    main()
+TypeError: main() missing 3 required positional arguments: 'chosen_beat_path', 'chosen_image_path', and 'artist_name'
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+Traceback (most recent call last):
+  File "/Users/kvit/Documents/beat_auto_uploader/src/orchestrator.py", line 103, in <module>
+    main()
+TypeError: main() missing 3 required positional arguments: 'chosen_beat_path', 'chosen_image_path', and 'artist_name'
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+Traceback (most recent call last):
+  File "/Users/kvit/Documents/beat_auto_uploader/src/orchestrator.py", line 103, in <module>
+    main()
+TypeError: main() missing 3 required positional arguments: 'chosen_beat_path', 'chosen_image_path', and 'artist_name'
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+Traceback (most recent call last):
+  File "/Users/kvit/Documents/beat_auto_uploader/src/orchestrator.py", line 103, in <module>
+    main()
+TypeError: main() missing 3 required positional arguments: 'chosen_beat_path', 'chosen_image_path', and 'artist_name'
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+Traceback (most recent call last):
+  File "/Users/kvit/Documents/beat_auto_uploader/src/orchestrator.py", line 103, in <module>
+    main()
+TypeError: main() missing 3 required positional arguments: 'chosen_beat_path', 'chosen_image_path', and 'artist_name'
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+Traceback (most recent call last):
+  File "/Users/kvit/Documents/beat_auto_uploader/src/orchestrator.py", line 103, in <module>
+    main()
+TypeError: main() missing 3 required positional arguments: 'chosen_beat_path', 'chosen_image_path', and 'artist_name'
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+Traceback (most recent call last):
+  File "/Users/kvit/Documents/beat_auto_uploader/src/orchestrator.py", line 103, in <module>
+    main()
+TypeError: main() missing 3 required positional arguments: 'chosen_beat_path', 'chosen_image_path', and 'artist_name'
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+Traceback (most recent call last):
+  File "/Users/kvit/Documents/beat_auto_uploader/src/orchestrator.py", line 103, in <module>
+    main()
+TypeError: main() missing 3 required positional arguments: 'chosen_beat_path', 'chosen_image_path', and 'artist_name'
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+Traceback (most recent call last):
+  File "/Users/kvit/Documents/beat_auto_uploader/src/orchestrator.py", line 103, in <module>
+    main()
+TypeError: main() missing 3 required positional arguments: 'chosen_beat_path', 'chosen_image_path', and 'artist_name'
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+Traceback (most recent call last):
+  File "/Users/kvit/Documents/beat_auto_uploader/src/orchestrator.py", line 103, in <module>
+    main()
+TypeError: main() missing 3 required positional arguments: 'chosen_beat_path', 'chosen_image_path', and 'artist_name'
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+Traceback (most recent call last):
+  File "/Users/kvit/Documents/beat_auto_uploader/src/orchestrator.py", line 103, in <module>
+    main()
+TypeError: main() missing 3 required positional arguments: 'chosen_beat_path', 'chosen_image_path', and 'artist_name'
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+Traceback (most recent call last):
+  File "/Users/kvit/Documents/beat_auto_uploader/src/orchestrator.py", line 103, in <module>
+    main()
+TypeError: main() missing 3 required positional arguments: 'chosen_beat_path', 'chosen_image_path', and 'artist_name'
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+Traceback (most recent call last):
+  File "/Users/kvit/Documents/beat_auto_uploader/src/orchestrator.py", line 103, in <module>
+    main()
+TypeError: main() missing 3 required positional arguments: 'chosen_beat_path', 'chosen_image_path', and 'artist_name'
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+Traceback (most recent call last):
+  File "/Users/kvit/Documents/beat_auto_uploader/src/orchestrator.py", line 103, in <module>
+    main()
+TypeError: main() missing 3 required positional arguments: 'chosen_beat_path', 'chosen_image_path', and 'artist_name'
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+Traceback (most recent call last):
+  File "/Users/kvit/Documents/beat_auto_uploader/src/orchestrator.py", line 103, in <module>
+    main()
+TypeError: main() missing 3 required positional arguments: 'chosen_beat_path', 'chosen_image_path', and 'artist_name'
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+Traceback (most recent call last):
+  File "/Users/kvit/Documents/beat_auto_uploader/src/orchestrator.py", line 103, in <module>
+    main()
+TypeError: main() missing 3 required positional arguments: 'chosen_beat_path', 'chosen_image_path', and 'artist_name'
+/Users/kvit/miniconda3/envs/beatauto/lib/python3.10/site-packages/google/api_core/_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.19) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+Traceback (most recent call last):
+  File "/Users/kvit/Documents/beat_auto_uploader/src/orchestrator.py", line 103, in <module>
+    main()
+TypeError: main() missing 3 required positional arguments: 'chosen_beat_path', 'chosen_image_path', and 'artist_name'

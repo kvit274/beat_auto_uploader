@@ -6,6 +6,9 @@ dependencies:
   - ffmpeg
   - pip
   - pip:
+      - google-auth-oauthlib
+      - google-auth-httplib2
+      - google-api-python-client
       - pyyaml
       - python-dotenv
       - requests
@@ -16,3 +19,4 @@ dependencies:
       - google-api-python-client
       - google-auth-oauthlib
       - playwright
+      - google-generativeai

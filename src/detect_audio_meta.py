@@ -8,7 +8,7 @@ _MINOR_PROFILE = np.array([6.33,2.68,3.52,5.38,2.60,3.53,2.54,4.75,3.98,2.69,3.3
 def estimate_bpm(path):
     y, sr = librosa.load(path, mono=True)
     tempo, _ = librosa.beat.beat_track(y=y, sr=sr)
-    return float(round(tempo[0]))
+    return int(round(tempo[0]))
 
 def estimate_key(path):
     y, sr = librosa.load(path, mono=True)
@@ -39,12 +39,12 @@ def estimate_key(path):
             best_score, best_key, best_mode = min_corr, _PITCH_CLASSES[i], 'Minor'
 
     vals = np.array(list(scores.values()))
-    confidence = float(np.exp(best_score) / np.sum(np.exp(vals)))
+    # confidence = float(np.exp(best_score) / np.sum(np.exp(vals)))
 
-    return f"{best_key} {best_mode}", confidence   
+    return f"{best_key} {best_mode}"
     
 
 def detect_audio_meta(path):
     bpm = estimate_bpm(path)
-    key, confidence = estimate_key(path)
-    return bpm, key, confidence
+    key = estimate_key(path)
+    return bpm, key
